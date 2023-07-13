@@ -22,10 +22,10 @@ SRCS := \
 	megaphone.cpp
 
 OBJS := \
-	$(SRCS:.c=.o)
+	$(SRCS:.cpp=.o)
 
 DEPS := \
-	$(SRCS:.c=.d)
+	$(SRCS:.cpp=.d)
 
 -include $(DEPS)
 
