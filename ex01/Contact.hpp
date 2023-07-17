@@ -27,11 +27,21 @@ private:
 	std::string _nickname;
 	std::string _phone_number;
 	std::string _darkest_secret;
-	void	_printField(const std::string& data);
-	void	_setField(const std::string& data, std::string& new_data);
+
+	void _printField(const std::string &data);
+
+	void _setField(const std::string &data, std::string &new_data);
+
 public:
 	Contact();
+
 	~Contact();
+
+	void Set();
+
+	void Print(int idx);
+
+	void PrintDetail();
 };
 
 #endif
