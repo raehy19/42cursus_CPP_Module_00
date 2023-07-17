@@ -19,7 +19,9 @@ RM := rm -f
 all : $(NAME)
 
 SRCS := \
-	phonebook.cpp \
+	Contact.cpp \
+	PhoneBook.cpp \
+	main.cpp
 
 
 OBJS := \
