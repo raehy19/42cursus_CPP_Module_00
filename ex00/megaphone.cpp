@@ -14,16 +14,16 @@
 
 void	printUpperCase(const std::string& str)
 {
-	for (std::string::size_type i = 0; i < str.length(); ++i)
+	for (std::string::size_type i(0); i < str.length(); ++i)
 		std::cout << (char)(std::toupper(str.at(i)));
 }
 
 int	main(int argc, char **argv)
 {
-	if (argc < 2)
+	if (argc == 1)
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
 	else
-		for (int i = 1; i < argc; ++i)
+		for (int i(1); i < argc; ++i)
 			printUpperCase(argv[i]);
 	std::cout << std::endl;
 	return (0);
