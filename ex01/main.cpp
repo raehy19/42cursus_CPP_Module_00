@@ -18,10 +18,10 @@ int main(void) {
 
 	while (true) {
 		std::cout << "Enter Command ( ADD | SEARCH | EXIT ) :" << std::endl;
+		std::cin.clear();
 		std::getline(std::cin, command);
 		if (std::cin.eof() || std::cin.fail())
 			return (EXIT_FAILURE);
-		std::cin.clear();
 		if (command.compare("EXIT") == 0)
 			break;
 		else if (command.compare("ADD") == 0)

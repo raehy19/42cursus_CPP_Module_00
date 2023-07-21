@@ -34,7 +34,9 @@ void PhoneBook::_Print() {
 	std::cout << "|----------|----------|----------|----------|" << std::endl;
 	for (int i(0); i < _num; ++i)
 		_contact[i].Print(i);
-	std::cout << _num << " rows in PhoneBook" << std::endl;
+	std::cout << "Total " << _num << " Contact in PhoneBook" << std::endl;
+	std::cout << "Enter Index ( 0 ~ " << _num - 1 << " ) : ";
+
 }
 
 void PhoneBook::Search() {
@@ -47,7 +49,7 @@ void PhoneBook::Search() {
 	if (std::cin.eof())
 		exit(EXIT_FAILURE);
 	if (std::cin.fail() || idx < 0 || idx >= this->_num)
-		std::cout << "Invalid idx" << std::endl;
+		std::cout << "Invalid Index" << std::endl;
 	else
 		_contact[idx].PrintDetail();
 	std::cin.clear();
