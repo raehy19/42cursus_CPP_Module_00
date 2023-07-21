@@ -12,14 +12,12 @@
 
 #include <iostream>
 
-void	printUpperCase(const std::string& str)
-{
+void printUpperCase(const std::string &str) {
 	for (std::string::size_type i(0); i < str.length(); ++i)
-		std::cout << (char)(std::toupper(str.at(i)));
+		std::cout << (char) (std::toupper(str.at(i)));
 }
 
-int	main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
 	if (argc == 1)
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
 	else
