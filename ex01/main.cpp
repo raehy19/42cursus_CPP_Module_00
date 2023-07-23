@@ -22,11 +22,11 @@ int main(void) {
 		std::getline(std::cin, command);
 		if (std::cin.eof() || std::cin.fail())
 			return (EXIT_FAILURE);
-		if (command.compare("EXIT") == 0)
+		if (command == "EXIT")
 			break;
-		else if (command.compare("ADD") == 0)
+		else if (command == "ADD")
 			phonebook.Add();
-		else if (command.compare("SEARCH") == 0)
+		else if (command == "SEARCH")
 			phonebook.Search();
 	}
 	return (EXIT_SUCCESS);
